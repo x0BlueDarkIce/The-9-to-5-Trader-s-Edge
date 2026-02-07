@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Best Prop Firm Account If You Work a 9-to-5 | Vedic Trades</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    :root {
+      --bg: #ffffff;
+      --bg-secondary: #f7f6f3;
+      --text: #37352f;
+      --text-secondary: #6b6b6b;
+      --text-muted: #9b9a97;
+      --border: #e9e9e7;
+      --highlight: #fff3a3;
+      --callout-yellow: #fef9e6;
+      --callout-blue: #e7f3ff;
+      --callout-green: #e6f6e6;
+      --callout-red: #fce8e8;
+      --code-bg: #f1f1ef;
+      --cover-bg: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    }
+    
+    [data-theme="dark"] {
+      --bg: #191919;
+      --bg-secondary: #252525;
+      --text: #e0e0e0;
+      --text-secondary: #a0a0a0;
+      --text-muted: #707070;
+      --border: #333333;
+      --highlight: #4a4520;
+      --callout-yellow: #2d2a1a;
+      --callout-blue: #1a2433;
+      --callout-green: #1a2a1a;
+      --callout-red: #2a1a1a;
+      --code-bg: #2a2a2a;
+      --cover-bg: linear-gradient(135deg, #0f0f1a 0%, #0d1520 50%, #081828 100%);
+    }
+    
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      font-size: 16px;
+      transition: background 0.3s, color 0.3s;
+    }
+    
+    .page {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 80px 24px 120px;
+    }
+    
+    /* Theme Toggle */
+    .theme-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      z-index: 100;
+      transition: all 0.3s;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    
+    .theme-toggle:hover {
+      transform: scale(1.05);
+    }
+    
+    .theme-toggle .sun { display: none; }
+    .theme-toggle .moon { display: block; }
+    
+    [data-theme="dark"] .theme-toggle .sun { display: block; }
+    [data-theme="dark"] .theme-toggle .moon { display: none; }
+    
+    /* Cover */
+    .cover {
+      width: 100vw;
+      margin-left: calc(-50vw + 50%);
+      height: 280px;
+      background: var(--cover-bg);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .cover::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: 
+        radial-gradient(circle at 20% 50%, rgba(99, 102, 241, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 50%, rgba(34, 197, 94, 0.1) 0%, transparent 50%);
+    }
+    
+    .cover-pattern {
+      position: absolute;
+      inset: 0;
+      opacity: 0.05;
+      background-image: 
+        linear-gradient(rgba(255,255,255,.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.1) 1px, transparent 1px);
+      background-size: 50px 50px;
+    }
+    
+    /* Icon */
+    .icon {
+      font-size: 72px;
+      margin-top: -40px;
+      margin-bottom: 16px;
+    }
+    
+    /* Title */
+    h1 {
+      font-family: 'Merriweather', Georgia, serif;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+    
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+    
+    .blog-link {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 32px;
+    }
+    
+    .blog-link a {
+      color: var(--text-secondary);
+      font-weight: 500;
+    }
+    
+    /* Properties */
+    .properties {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 24px;
+      padding: 16px 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 40px;
+      font-size: 14px;
+    }
+    
+    .property {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .property-label {
+      color: var(--text-muted);
+    }
+    
+    .property-value {
+      color: var(--text);
+    }
+    
+    .tag {
+      background: #e8f5e9;
+      color: #2e7d32;
+      padding: 2px 8px;
+      border-radius: 3px;
+      font-size: 12px;
+      font-weight: 500;
+    }
+    
+    [data-theme="dark"] .tag {
+      background: #1a2a1a;
+      color: #6abf6a;
+    }
+    
+    .tag.blue {
+      background: #e3f2fd;
+      color: #1565c0;
+    }
+    
+    [data-theme="dark"] .tag.blue {
+      background: #1a2433;
+      color: #64b5f6;
+    }
+
+    .tag.purple {
+      background: #f3e8fd;
+      color: #7b1fa2;
+    }
+
+    [data-theme="dark"] .tag.purple {
+      background: #251a33;
+      color: #ce93d8;
+    }
+
+    .tag.green {
+      background: #e8f5e9;
+      color: #2e7d32;
+    }
+
+    [data-theme="dark"] .tag.green {
+      background: #1a2a1a;
+      color: #6abf6a;
+    }
+    
+    /* Content */
+    h2 {
+      font-size: 24px;
+      font-weight: 600;
+      margin: 48px 0 16px;
+      color: var(--text);
+    }
+    
+    h3 {
+      font-size: 18px;
+      font-weight: 600;
+      margin: 32px 0 12px;
+      color: var(--text);
+    }
+    
+    p {
+      margin-bottom: 16px;
+      color: var(--text);
+    }
+    
+    /* Callout */
+    .callout {
+      background: var(--bg-secondary);
+      border-radius: 4px;
+      padding: 16px 16px 16px 48px;
+      position: relative;
+      margin: 24px 0;
+    }
+    
+    .callout-icon {
+      position: absolute;
+      left: 16px;
+      top: 16px;
+      font-size: 18px;
+    }
+    
+    .callout.blue {
+      background: var(--callout-blue);
+    }
+    
+    .callout.green {
+      background: var(--callout-green);
+    }
+    
+    .callout.yellow {
+      background: var(--callout-yellow);
+    }
+
+    .callout.red {
+      background: var(--callout-red);
+    }
+    
+    /* Quote */
+    .quote {
+      border-left: 3px solid var(--text);
+      padding-left: 16px;
+      margin: 24px 0;
+      font-style: italic;
+      color: var(--text-secondary);
+    }
+    
+    /* Table */
+    .table-wrapper {
+      margin: 24px 0;
+      overflow-x: auto;
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+    
+    th, td {
+      text-align: left;
+      padding: 8px 12px;
+      border: 1px solid var(--border);
+    }
+    
+    th {
+      background: var(--bg-secondary);
+      font-weight: 600;
+    }
+    
+    /* Code-like numbers */
+    .highlight-num {
+      background: var(--code-bg);
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-family: 'SFMono-Regular', Consolas, monospace;
+      font-size: 14px;
+    }
+    
+    /* Divider */
+    hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 32px 0;
+    }
+    
+    /* Toggle */
+    .toggle {
+      margin: 16px 0;
+    }
+    
+    .toggle-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      padding: 8px 0;
+      font-weight: 500;
+    }
+    
+    .toggle-header::before {
+      content: '▶';
+      font-size: 10px;
+      transition: transform 0.2s;
+    }
+    
+    .toggle.open .toggle-header::before {
+      transform: rotate(90deg);
+    }
+    
+    .toggle-content {
+      display: none;
+      padding-left: 24px;
+    }
+    
+    .toggle.open .toggle-content {
+      display: block;
+    }
+    
+    /* List */
+    ul, ol {
+      margin: 16px 0;
+      padding-left: 24px;
+    }
+    
+    li {
+      margin: 8px 0;
+    }
+    
+    /* Link */
+    a {
+      color: var(--text);
+      text-decoration: underline;
+      text-decoration-color: var(--border);
+      text-underline-offset: 2px;
+    }
+    
+    a:hover {
+      text-decoration-color: var(--text);
+    }
+    
+    /* Inline highlight */
+    .inline-highlight {
+      background: var(--highlight);
+      padding: 0 2px;
+    }
+    
+    /* Subtle CTA */
+    .subtle-cta {
+      margin: 40px 0;
+      padding: 20px 0;
+      border-top: 1px solid var(--border);
+      font-size: 14px;
+      color: var(--text-secondary);
+    }
+    
+    .subtle-cta a {
+      color: var(--text);
+      font-weight: 500;
+    }
+    
+    /* Math block */
+    .math-block {
+      background: var(--bg-secondary);
+      border-radius: 4px;
+      padding: 20px 24px;
+      margin: 24px 0;
+      font-family: 'SFMono-Regular', Consolas, monospace;
+      font-size: 14px;
+      overflow-x: auto;
+    }
+    
+    .math-block .equation {
+      margin: 8px 0;
+    }
+    
+    .math-block .result {
+      color: #22c55e;
+      font-weight: 600;
+    }
+    
+    /* Roadmap */
+    .roadmap {
+      margin: 32px 0;
+    }
+    
+    .roadmap-item {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    
+    .roadmap-marker {
+      width: 32px;
+      height: 32px;
+      background: #22c55e;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-weight: 600;
+      font-size: 14px;
+      flex-shrink: 0;
+    }
+    
+    .roadmap-content h4 {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    
+    .roadmap-content p {
+      font-size: 14px;
+      color: var(--text-secondary);
+      margin: 0;
+    }
+
+    /* Comparison cards */
+    .vs-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin: 24px 0;
+    }
+
+    .vs-card {
+      background: var(--bg-secondary);
+      border-radius: 6px;
+      padding: 20px;
+      border: 1px solid var(--border);
+    }
+
+    .vs-card.highlight-card {
+      border-color: #22c55e;
+      box-shadow: 0 0 0 1px #22c55e;
+    }
+
+    .vs-card h4 {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .vs-card ul {
+      margin: 0;
+      padding-left: 18px;
+      font-size: 14px;
+    }
+
+    .vs-card li {
+      margin: 6px 0;
+      color: var(--text-secondary);
+    }
+
+    @media (max-width: 560px) {
+      .vs-grid { grid-template-columns: 1fr; }
+      h1 { font-size: 30px; }
+    }
+
+    /* Footer */
+    .footer {
+      margin-top: 80px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      font-size: 14px;
+      color: var(--text-muted);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <button class="theme-toggle" onclick="toggleTheme()" title="Toggle dark mode">
+    <span class="moon">🌙</span>
+    <span class="sun">☀️</span>
+  </button>
+
+  <div class="cover">
+    <div class="cover-pattern"></div>
+  </div>
+  
+  <div class="page">
+    <div class="icon">💼</div>
+    
+    <h1>The 9-to-5 Trader's Edge: Why Instant Funded Accounts Are Built for You</h1>
+    <p class="subtitle">A no-fluff breakdown of the best prop firm setup for working professionals</p>
+    <p class="blog-link">For more guides like this, check out <a href="https://vedictrades.blog/prop-firm-account-guides/" target="_blank">my blog</a> →</p>
+    
+    <div class="properties">
+      <div class="property">
+        <span class="property-label">Firm</span>
+        <span class="tag purple">Purdia Capital</span>
+      </div>
+      <div class="property">
+        <span class="property-label">Account Type</span>
+        <span class="tag blue">Instant Funded</span>
+      </div>
+      <div class="property">
+        <span class="property-label">Evaluation</span>
+        <span class="tag green">None</span>
+      </div>
+      <div class="property">
+        <span class="property-label">Profit Split</span>
+        <span class="property-value">90%</span>
+      </div>
+      <div class="property">
+        <span class="property-label">Max Accounts</span>
+        <span class="property-value">3</span>
+      </div>
+    </div>
+    
+    <p>Let's be honest—if you're working a full-time job, you don't have the luxury of spending weeks grinding through an evaluation phase. You need something that respects your time, doesn't punish you for having a life outside of charts, and actually lets you <span class="inline-highlight">get paid without jumping through hoops</span>.</p>
+    
+    <p>That's exactly why <a href="https://purdia.com?i=VEDIC" target="_blank">Purdia Capital's</a> Instant Funded Accounts are, in my opinion, the best prop firm setup for anyone with a 9-to-5.</p>
+
+    <div class="callout green">
+      <span class="callout-icon">🎁</span>
+      <strong>Use code VEDIC</strong> at checkout to get up to <strong>25% off</strong> any Purdia Instant Funded Account. <a href="https://purdia.com?i=VEDIC" target="_blank">Grab it here →</a>
+    </div>
+
+    <h2>Why Most Prop Firms Don't Work for 9-to-5 Traders</h2>
+
+    <p>Before we get into Purdia, let's talk about why the typical prop firm model is a nightmare if you have a day job:</p>
+
+    <div class="vs-grid">
+      <div class="vs-card">
+        <h4>❌ Traditional Prop Firms</h4>
+        <ul>
+          <li>Multi-phase evaluations (weeks/months)</li>
+          <li>Strict consistency rules</li>
+          <li>Profits from evaluation don't carry over</li>
+          <li>Time limits to hit targets</li>
+          <li>One bad week = start over</li>
+        </ul>
+      </div>
+      <div class="vs-card highlight-card">
+        <h4>✅ Purdia Instant Funded</h4>
+        <ul>
+          <li>No evaluation phase at all</li>
+          <li>No consistency rule</li>
+          <li>Profits carry into live account</li>
+          <li>No time pressure</li>
+          <li>Daily payouts once live</li>
+        </ul>
+      </div>
+    </div>
+
+    <p>When you're squeezing in trades before your morning standup or during lunch break, the last thing you need is a consistency rule telling you that one good day was "too good." Purdia doesn't do that. There's <strong>no consistency rule</strong>—you trade when you can, however you can, and your profits are yours.</p>
+
+    <h2>How It Actually Works</h2>
+
+    <p>You pay a one-time fee, and you're immediately placed into a Sim Funded Account (SFA). It uses live market data but places simulated orders. Think of it as the firm's way of making sure you can trade—not a months-long audition.</p>
+
+    <div class="callout yellow">
+      <span class="callout-icon">💡</span>
+      <strong>Key difference from other firms:</strong> The profits you make in the SFA carry over to your Live Funded Account (up to the profit target). You're not starting from zero when you go live. Your work actually counts from Day 1.
+    </div>
+
+    <h3>What You Need to Hit</h3>
+
+    <p>The benchmarks are straightforward—and very doable for someone trading part-time:</p>
+
+    <div class="table-wrapper">
+      <table>
+        <tr>
+          <th>Account Size</th>
+          <th>Min. Profit Target</th>
+          <th>Daily Goal (over 5 days)</th>
+          <th>Min. Trading Days</th>
+          <th>Min. Profitable Days</th>
+        </tr>
+        <tr>
+          <td><span class="highlight-num">$25,000</span></td>
+          <td><span class="highlight-num">$750</span></td>
+          <td><span class="highlight-num">$150/day</span></td>
+          <td>10</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td><span class="highlight-num">$50,000</span></td>
+          <td><span class="highlight-num">$1,000</span></td>
+          <td><span class="highlight-num">$200/day</span></td>
+          <td>10</td>
+          <td>5</td>
+        </tr>
+      </table>
+    </div>
+
+    <p><span class="highlight-num">$150</span> or <span class="highlight-num">$200</span> a day isn't some heroic feat. That's one or two clean trades. You can realistically knock that out in the first hour of a session—before your workday even starts or right after it ends.</p>
+
+    <div class="callout blue">
+      <span class="callout-icon">🎯</span>
+      <strong>You only need 5 profitable days out of a minimum 10.</strong> That's a 50% win-day rate. Take your trades when the setup is right, sit out when it's not. No pressure to trade every single day.
+    </div>
+
+    <h2>Once You Go Live — That's Where It Gets Good</h2>
+
+    <p>After you hit the benchmarks in the SFA, you move to a Live Funded Account (LFA). This is a real brokerage account with real capital. Here's what changes:</p>
+
+    <div class="roadmap">
+      <div class="roadmap-item">
+        <div class="roadmap-marker">1</div>
+        <div class="roadmap-content">
+          <h4>Your profits transfer over</h4>
+          <p>The money you made in the SFA moves with you (up to the profit target). You start the live account already in profit.</p>
+        </div>
+      </div>
+      <div class="roadmap-item">
+        <div class="roadmap-marker">2</div>
+        <div class="roadmap-content">
+          <h4>Payouts from Day 1</h4>
+          <p>No waiting period. No "first payout after 30 days" nonsense. Request a payout on your very first day in the LFA.</p>
+        </div>
+      </div>
+      <div class="roadmap-item">
+        <div class="roadmap-marker">3</div>
+        <div class="roadmap-content">
+          <h4>Daily payouts via bank transfer</h4>
+          <p>Every payout request is processed within 24 hours. Domestic and international transfers supported.</p>
+        </div>
+      </div>
+      <div class="roadmap-item">
+        <div class="roadmap-marker">4</div>
+        <div class="roadmap-content">
+          <h4>90% profit split — you keep almost everything</h4>
+          <p>No scaling your split from 50% to 80% over months. It's 90% from the start.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="quote">
+      "You hit your target, you go live, you take out your money. It's that simple. No games, no hidden rules, no waiting."
+    </div>
+
+    <h2>The "Risk-Free in 2 Days" Playbook</h2>
+
+    <p>This is the part most people miss — and it completely changes the game.</p>
+
+    <p>Remember, when you move from the SFA to the Live Funded Account, <span class="inline-highlight">your profits come with you</span>. And in the LFA, you can request payouts from Day 1. Every day. Processed within 24 hours.</p>
+
+    <p>So here's the move:</p>
+
+    <div class="callout yellow">
+      <span class="callout-icon">🧠</span>
+      <strong>The goal is simple:</strong> Recover what you paid for the account as fast as possible. Once you do that, everything after is pure profit. Zero risk.
+    </div>
+
+    <div class="roadmap">
+      <div class="roadmap-item">
+        <div class="roadmap-marker">1</div>
+        <div class="roadmap-content">
+          <h4>Day 1 in the LFA → Withdraw 50% of account cost</h4>
+          <p>You already have profits sitting in the account from the SFA phase. Request a payout for half of what you originally paid for the account. Processed within 24 hours.</p>
+        </div>
+      </div>
+      <div class="roadmap-item">
+        <div class="roadmap-marker">2</div>
+        <div class="roadmap-content">
+          <h4>Day 2 in the LFA → Withdraw the remaining 50%</h4>
+          <p>Next day, pull out the other half. You've now fully recovered your account cost. Every single rupee you paid is back in your bank.</p>
+        </div>
+      </div>
+      <div class="roadmap-item">
+        <div class="roadmap-marker">3</div>
+        <div class="roadmap-content">
+          <h4>Day 3 onwards → Pure profit, zero risk</h4>
+          <p>From this point on, you're playing with house money. Every payout is 100% profit. You have nothing left to lose.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="math-block">
+      <div class="equation">Example: $50K Account (fee: ~$300)</div>
+      <br>
+      <div class="equation">LFA Day 1 → Withdraw $150 (50% of fee)</div>
+      <div class="equation">LFA Day 2 → Withdraw $150 (remaining 50%)</div>
+      <br>
+      <div class="equation">Total recovered: <span class="result">$300 — full account cost</span></div>
+      <div class="equation">Your risk after Day 2: <span class="result">$0</span></div>
+      <div class="equation">Everything from Day 3: <span class="result">Pure profit at 90% split</span></div>
+    </div>
+
+    <p>Most traders stay "at risk" for weeks or months with other firms, hoping to eventually break even on their evaluation fees. With Purdia, <span class="inline-highlight">you can be risk-free within 48 hours of going live</span>. That's not a strategy — that's just common sense.</p>
+
+    <div class="callout green">
+      <span class="callout-icon">💰</span>
+      <strong>This is why it's perfect for 9-to-5 traders.</strong> You're not gambling your hard-earned salary on a prop firm that might never pay you back. You recover your cost immediately and then build from a position of zero risk. Your day job funds the account, and the account pays you back before the week is over.
+    </div>
+
+    <h2>The Risk Setup in the Live Account</h2>
+
+    <p>Because you're already profitable when you enter the LFA, the risk parameters are actually quite generous:</p>
+
+    <div class="math-block">
+      <div class="equation">Example: $100K Instant Funded Account</div>
+      <br>
+      <div class="equation">Starting LFA Balance: <span class="result">$3,000</span> (profits from SFA)</div>
+      <div class="equation">Minimum Balance Threshold: <span class="result">$100</span></div>
+      <div class="equation">Available Drawdown: <span class="result">$2,900</span></div>
+      <br>
+      <div class="equation">Max Drawdown: <span class="result">EOD Trailing</span> (only updates at end of day)</div>
+      <div class="equation">Daily Loss Limit: Set with your risk manager</div>
+      <div class="equation">DLL Cap: ≤ 33% of available balance</div>
+    </div>
+
+    <div class="callout green">
+      <span class="callout-icon">🛡️</span>
+      <strong>The drawdown is End of Day (EOD) trailing — not intraday.</strong> This is massive. Most firms use intraday trailing drawdowns that punish you the moment you're in profit. With Purdia, your drawdown only updates at the end of the trading day. That means you can trade freely during the session without watching your drawdown tighten with every tick.
+    </div>
+
+    <h2>Why 3 Accounts Is the Sweet Spot for 9-to-5 Traders</h2>
+
+    <p>Purdia allows up to <strong>3 live trading accounts</strong> at a time. Here's why that's perfect for working professionals:</p>
+
+    <div class="math-block">
+      <div class="equation">3 × $50K Accounts</div>
+      <div class="equation">Daily target per account: $200</div>
+      <div class="equation">Combined daily target: <span class="result">$600</span></div>
+      <br>
+      <div class="equation">At 90% profit split:</div>
+      <div class="equation">Your daily take-home: <span class="result">$540</span></div>
+      <br>
+      <div class="equation">3 × $25K Accounts</div>
+      <div class="equation">Daily target per account: $150</div>
+      <div class="equation">Combined daily target: <span class="result">$450</span></div>
+      <div class="equation">Your daily take-home: <span class="result">$405</span></div>
+    </div>
+
+    <p>You're taking the same trades across all three accounts. The workload doesn't triple—but the income does. And because you can request payouts daily, the money doesn't sit locked up in the account. <span class="inline-highlight">You trade, you profit, you withdraw. Every single day.</span></p>
+
+    <h2>The 9-to-5 Advantage (Yes, It's Actually an Advantage)</h2>
+
+    <p>Here's something nobody talks about: having a day job can actually make you a <em>better</em> funded trader. Here's why:</p>
+
+    <div class="roadmap">
+      <div class="roadmap-item">
+        <div class="roadmap-marker">1</div>
+        <div class="roadmap-content">
+          <h4>You can't overtrade</h4>
+          <p>Limited screen time means you take only the best setups. No sitting there for 8 hours forcing trades out of boredom.</p>
+        </div>
+      </div>
+      <div class="roadmap-item">
+        <div class="roadmap-marker">2</div>
+        <div class="roadmap-content">
+          <h4>You don't depend on trading income</h4>
+          <p>Your salary covers your bills. That removes the desperation that makes most traders blow accounts.</p>
+        </div>
+      </div>
+      <div class="roadmap-item">
+        <div class="roadmap-marker">3</div>
+        <div class="roadmap-content">
+          <h4>No consistency rule = no pressure</h4>
+          <p>Had a crazy week at work? Skip trading. Had a slow day? Take 3 trades. Purdia doesn't care how you spread your profits.</p>
+        </div>
+      </div>
+      <div class="roadmap-item">
+        <div class="roadmap-marker">4</div>
+        <div class="roadmap-content">
+          <h4>EOD trailing drawdown in SFA = less babysitting</h4>
+          <p>The drawdown only updates at end of day, not intraday. You can place your trades and go to work without watching every tick.</p>
+        </div>
+      </div>
+    </div>
+
+    <h2>The Realistic Path</h2>
+
+    <p>Let's lay out a realistic timeline for a 9-to-5 trader starting from scratch:</p>
+
+    <div class="table-wrapper">
+      <table>
+        <tr>
+          <th>Week</th>
+          <th>Action</th>
+          <th>Status</th>
+        </tr>
+        <tr>
+          <td>Week 1–2</td>
+          <td>Open first account, trade during morning/evening session</td>
+          <td><span class="tag blue">SFA Phase</span></td>
+        </tr>
+        <tr>
+          <td>Week 3</td>
+          <td>Hit profit target, complete KYC, onboarding call</td>
+          <td><span class="tag">Moving to LFA</span></td>
+        </tr>
+        <tr>
+          <td>Week 3–4</td>
+          <td>Trading live, daily payouts, reinvest into Account #2</td>
+          <td><span class="tag green">Live + Scaling</span></td>
+        </tr>
+        <tr>
+          <td>Month 2+</td>
+          <td>Running 2–3 accounts, compounding payouts</td>
+          <td><span class="tag green">Full Operation</span></td>
+        </tr>
+      </table>
+    </div>
+
+    <p>Within a month or two, you can have a fully operational side income that doesn't require you to quit your job, wake up at 4 AM, or stare at charts all day. The system is designed to work around your life—not the other way around.</p>
+
+    <hr>
+
+    <h2>Final Thoughts</h2>
+
+    <p>Most prop firms are designed for full-time traders who can sit at a screen all day and meet rigid daily targets. If that's not you, those firms are going to eat your money.</p>
+
+    <p>Purdia's Instant Funded Accounts flip the model. No evaluation, no consistency rule, profits carry forward, 90% split, daily payouts, and up to 3 accounts. For someone working a 9-to-5, this is as close to a "plug and play" prop trading setup as it gets.</p>
+
+    <p>You don't need to trade more. You just need to <span class="inline-highlight">trade smarter, with the right account behind you</span>.</p>
+
+    <div class="subtle-cta">
+      Ready to start? Check out <a href="https://purdia.com?i=VEDIC" target="_blank">Purdia Capital's Instant Funded Accounts</a> — no evaluation, no consistency rules, and daily payouts from Day 1. Use code <strong>VEDIC</strong> at checkout to get up to 25% off!
+    </div>
+    
+    <hr>
+    
+    <div class="toggle" onclick="this.classList.toggle('open')">
+      <div class="toggle-header">Quick Reference: SFA → LFA Checklist</div>
+      <div class="toggle-content">
+        <ul>
+          <li>Pay one-time fee → get Sim Funded Account immediately</li>
+          <li>Trade with live data, simulated orders</li>
+          <li>Hit minimum profit target ($750 for 25K / $1,000 for 50K)</li>
+          <li>Complete at least 10 trading days, 5 profitable days</li>
+          <li>Pass KYC + onboarding call with risk manager</li>
+          <li>Move to Live Funded Account with profits intact</li>
+          <li>Start taking daily payouts at 90% split</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="toggle" onclick="this.classList.toggle('open')">
+      <div class="toggle-header">Live Funded Account Rules Summary</div>
+      <div class="toggle-content">
+        <ul>
+          <li>Real brokerage account with live capital</li>
+          <li>EOD trailing drawdown (only updates at end of day, not intraday)</li>
+          <li>Daily Loss Limit set with risk manager (max 33% of available balance)</li>
+          <li>Up to 3 live accounts simultaneously</li>
+          <li>Scaling plan available for position size & risk increases</li>
+          <li>All payout requests processed within 24 hours</li>
+          <li>Payouts via domestic and international bank transfer</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Written by Vedic Trades • Prop Firm Guides</p>
+    </div>
+  </div>
+  
+  <script>
+    function toggleTheme() {
+      const html = document.documentElement;
+      const currentTheme = html.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+    }
+    
+    // Load saved theme
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+    
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
