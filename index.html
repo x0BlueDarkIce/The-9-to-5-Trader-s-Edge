@@ -495,6 +495,115 @@
       h1 { font-size: 30px; }
     }
 
+    /* Banner CTA */
+    .banner {
+      margin: 48px 0 0;
+      padding: 32px;
+      background: linear-gradient(135deg, #0f3460 0%, #1a1a2e 100%);
+      border-radius: 8px;
+      color: #ffffff;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .banner::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: 
+        radial-gradient(circle at 20% 50%, rgba(34, 197, 94, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 50%, rgba(99, 102, 241, 0.1) 0%, transparent 50%);
+    }
+
+    .banner * { position: relative; z-index: 1; }
+
+    .banner-badge {
+      display: inline-block;
+      background: #22c55e;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .banner h3 {
+      color: #ffffff;
+      font-family: 'Merriweather', Georgia, serif;
+      font-size: 22px;
+      margin: 0 0 8px;
+    }
+
+    .banner p {
+      color: rgba(255,255,255,0.8);
+      font-size: 15px;
+      margin-bottom: 8px;
+    }
+
+    .banner .banner-stats {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      margin: 20px 0;
+      flex-wrap: wrap;
+    }
+
+    .banner .stat {
+      text-align: center;
+    }
+
+    .banner .stat-value {
+      font-family: 'SFMono-Regular', Consolas, monospace;
+      font-size: 24px;
+      font-weight: 700;
+      color: #22c55e;
+      display: block;
+    }
+
+    .banner .stat-label {
+      font-size: 12px;
+      color: rgba(255,255,255,0.6);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .banner .discount-code {
+      display: inline-block;
+      background: rgba(255,255,255,0.1);
+      border: 1px dashed rgba(255,255,255,0.3);
+      padding: 6px 16px;
+      border-radius: 4px;
+      font-family: 'SFMono-Regular', Consolas, monospace;
+      font-size: 16px;
+      font-weight: 700;
+      color: #fff;
+      margin: 12px 0;
+      letter-spacing: 2px;
+    }
+
+    .banner .btn-buy {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 14px 36px;
+      background: #22c55e;
+      color: #fff;
+      font-weight: 700;
+      font-size: 15px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+
+    .banner .btn-buy:hover {
+      background: #16a34a;
+      transform: translateY(-1px);
+      text-decoration: none;
+    }
+
     /* Footer */
     .footer {
       margin-top: 80px;
@@ -602,20 +711,31 @@
         <tr>
           <th>Account Size</th>
           <th>Min. Profit Target</th>
+          <th>EOD Drawdown</th>
           <th>Daily Goal (over 5 days)</th>
           <th>Min. Trading Days</th>
           <th>Min. Profitable Days</th>
         </tr>
         <tr>
           <td><span class="highlight-num">$25,000</span></td>
-          <td><span class="highlight-num">$750</span></td>
-          <td><span class="highlight-num">$150/day</span></td>
+          <td><span class="highlight-num">$1,000</span></td>
+          <td><span class="highlight-num">$1,000</span></td>
+          <td><span class="highlight-num">$200/day</span></td>
           <td>10</td>
           <td>5</td>
         </tr>
         <tr>
           <td><span class="highlight-num">$50,000</span></td>
-          <td><span class="highlight-num">$1,000</span></td>
+          <td><span class="highlight-num">$2,000</span></td>
+          <td><span class="highlight-num">$2,000</span></td>
+          <td><span class="highlight-num">$200/day</span></td>
+          <td>10</td>
+          <td>5</td>
+        </tr>
+        <tr style="background: var(--callout-green);">
+          <td><span class="highlight-num">$100,000</span> ⭐</td>
+          <td><span class="highlight-num">$3,000</span></td>
+          <td><span class="highlight-num">$3,000</span></td>
           <td><span class="highlight-num">$200/day</span></td>
           <td>10</td>
           <td>5</td>
@@ -623,7 +743,7 @@
       </table>
     </div>
 
-    <p><span class="highlight-num">$150</span> or <span class="highlight-num">$200</span> a day isn't some heroic feat. That's one or two clean trades. You can realistically knock that out in the first hour of a session—before your workday even starts or right after it ends.</p>
+    <p><span class="highlight-num">$200</span> a day isn't some heroic feat. That's one or two clean trades. You can realistically knock that out in the first hour of a session—before your workday even starts or right after it ends.</p>
 
     <div class="callout blue">
       <span class="callout-icon">🎯</span>
@@ -750,17 +870,11 @@
     <p>Purdia allows up to <strong>3 live trading accounts</strong> at a time. Here's why that's perfect for working professionals:</p>
 
     <div class="math-block">
-      <div class="equation">3 × $50K Accounts</div>
-      <div class="equation">Daily target per account: $200</div>
+      <div class="equation">3 Accounts × $200/day each</div>
       <div class="equation">Combined daily target: <span class="result">$600</span></div>
       <br>
       <div class="equation">At 90% profit split:</div>
       <div class="equation">Your daily take-home: <span class="result">$540</span></div>
-      <br>
-      <div class="equation">3 × $25K Accounts</div>
-      <div class="equation">Daily target per account: $150</div>
-      <div class="equation">Combined daily target: <span class="result">$450</span></div>
-      <div class="equation">Your daily take-home: <span class="result">$405</span></div>
     </div>
 
     <p>You're taking the same trades across all three accounts. The workload doesn't triple—but the income does. And because you can request payouts daily, the money doesn't sit locked up in the account. <span class="inline-highlight">You trade, you profit, you withdraw. Every single day.</span></p>
@@ -858,7 +972,7 @@
         <ul>
           <li>Pay one-time fee → get Sim Funded Account immediately</li>
           <li>Trade with live data, simulated orders</li>
-          <li>Hit minimum profit target ($750 for 25K / $1,000 for 50K)</li>
+          <li>Hit minimum profit target ($1,000 for 25K / $2,000 for 50K / $3,000 for 100K)</li>
           <li>Complete at least 10 trading days, 5 profitable days</li>
           <li>Pass KYC + onboarding call with risk manager</li>
           <li>Move to Live Funded Account with profits intact</li>
@@ -880,6 +994,34 @@
           <li>Payouts via domestic and international bank transfer</li>
         </ul>
       </div>
+    </div>
+
+    <div class="banner">
+      <span class="banner-badge">⭐ Best Value Pick</span>
+      <h3>The $100K Instant Funded Account</h3>
+      <p>Best risk-to-reward of any account size — and it's not even close.</p>
+      <div class="banner-stats">
+        <div class="stat">
+          <span class="stat-value">$3,000</span>
+          <span class="stat-label">Profit Target</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">$3,000</span>
+          <span class="stat-label">EOD Drawdown</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">1:1</span>
+          <span class="stat-label">Target : Drawdown</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">90%</span>
+          <span class="stat-label">Profit Split</span>
+        </div>
+      </div>
+      <p>Use code below for <strong>$200 off</strong></p>
+      <div class="discount-code">VEDIC</div>
+      <br>
+      <a href="https://purdia.com?i=VEDIC" target="_blank" class="btn-buy">Buy Now — $200 Off with VEDIC →</a>
     </div>
 
     <div class="footer">
